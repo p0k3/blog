@@ -7,6 +7,11 @@ gem 'haml'
 gem 'jquery-rails'
 gem 'RedCloth'
 
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
+
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
