@@ -11,15 +11,15 @@
   .container-fluid
     .row-fluid
       .span12
-        .navbar
+        .navbar.navbar-inverse
           .navbar-inner
             .container-fluid
-              = link_to "Le blog de Paul", root_url, class: "brand"
+              = link_to "Admin : Le blog de Paul", admin_root_url, class: "brand"
 
               .nav-collapse.collapse.navbar-responsive-collapse
                 %ul.nav
                   %li.active
-                    = link_to "__Accueil", root_path
+                    = link_to "__Accueil", admin_root_path
 
                 %ul.nav.pull-right
                   %li

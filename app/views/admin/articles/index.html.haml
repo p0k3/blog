@@ -1,0 +1,19 @@
+.well
+  %h3 Articles
+
+  %p
+    = link_to "Nouvel article", new_admin_article_path, class: "btn"
+
+  %table.table.table-striped
+    %tr
+      %th Id
+      %th Title
+      %th
+    - @articles.each do |a|
+      %tr
+        %td= a.id
+        %td
+          = link_to a.title, edit_admin_article_path(a)
+        %td
+          = link_to admin_article_path(a), method: "delete", confirm: I18n.t(:"are_you_sure") do
+            %i.icon-remove

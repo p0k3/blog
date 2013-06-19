@@ -5,6 +5,8 @@ gem 'bootstrap-sass', '~> 2.3.0.1'
 gem 'haml'
 gem 'jquery-rails'
 gem 'RedCloth'
+gem 'devise'
+gem 'simple_form'
 
 group :development do
   gem "better_errors"

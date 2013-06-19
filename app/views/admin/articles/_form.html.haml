@@ -1,0 +1,11 @@
+= simple_form_for [:admin, @article] do |f|
+
+  = f.input :title
+
+  = f.input :content, input_html: { rows: 7, style: "width:30%" }
+
+  = f.input :summary, input_html: { rows: 3, style: "width:30%" }
+
+  = f.input :description, input_html: { rows: 3, style: "width:30%" }
+
+  = f.submit

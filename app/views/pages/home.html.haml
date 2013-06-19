@@ -1,1 +1,7 @@
-%h1 Hello World !
+- @articles.each do |a|
+  .span4.well
+    %h3= a.title
+    %p
+      = RedCloth.new(a.summary).to_html.html_safe
+    %p.pull-right
+      = link_to "__read more...", article_path(a)
